@@ -18,6 +18,8 @@ const (
 	TagEdit
 	TagOccurrence
 	TagStateSummary
+	TagJoin
+	TagLeave
 )
 
 func (t MessageTag) String() string {
@@ -44,6 +46,10 @@ func (t MessageTag) String() string {
 		return "Occurrence"
 	case TagStateSummary:
 		return "StateSummary"
+	case TagJoin:
+		return "Join"
+	case TagLeave:
+		return "Leave"
 	default:
 		return "Unknown"
 	}

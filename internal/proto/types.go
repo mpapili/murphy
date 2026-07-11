@@ -48,6 +48,11 @@ type PlayerInput struct {
 	MoveX    float32 `json:"moveX"`
 	MoveY    float32 `json:"moveY"`
 	Jump     bool    `json:"jump"`
+	X        float32 `json:"x"`
+	Y        float32 `json:"y"`
+	Z        float32 `json:"z"`
+	Yaw      float32 `json:"yaw"`
+	Pitch    float32 `json:"pitch"`
 	Tick     uint64  `json:"tick"`
 }
 
