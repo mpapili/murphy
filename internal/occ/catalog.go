@@ -4,10 +4,10 @@ package occ
 type OccurrenceType string
 
 const (
-	TypeWeather  OccurrenceType = "weather"
-	TypeAnomaly  OccurrenceType = "anomaly"
-	TypeSpawn    OccurrenceType = "spawn"
-	TypeTimed    OccurrenceType = "timed"
+	TypeWeather OccurrenceType = "weather"
+	TypeAnomaly OccurrenceType = "anomaly"
+	TypeSpawn   OccurrenceType = "spawn"
+	TypeTimed   OccurrenceType = "timed"
 )
 
 // AllTypes is the starter set.

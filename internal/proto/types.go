@@ -28,11 +28,11 @@ type ChunkData struct {
 }
 
 type Edit struct {
-	X        int32  `json:"x"`
-	Y        int32  `json:"y"`
-	Z        int32  `json:"z"`
-	OldBrick uint8  `json:"oldBrick"`
-	NewBrick uint8  `json:"newBrick"`
+	X        int32 `json:"x"`
+	Y        int32 `json:"y"`
+	Z        int32 `json:"z"`
+	OldBrick uint8 `json:"oldBrick"`
+	NewBrick uint8 `json:"newBrick"`
 }
 
 type ChunkDiff struct {
