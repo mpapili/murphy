@@ -45,6 +45,8 @@ func main() {
 			"gameId":  gameID,
 		})
 	})
+	// Local-dev: force-publish one occurrence (system tests / admin).
+	mux.HandleFunc("/dev/occurrence", handleDevOccurrence(nc, gameID))
 
 	srv := &http.Server{Addr: ":" + port, Handler: mux, ReadHeaderTimeout: 5 * time.Second}
 	go func() {
